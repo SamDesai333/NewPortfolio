@@ -1,0 +1,23 @@
+{
+  "name": "newportfolio",
+  "version": "1.0.0",
+  "description": "New Portfolio for Samidh Desai",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o public/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamDesai333/NewPortfolio.git"
+  },
+  "author": "Samidh Desai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamDesai333/NewPortfolio/issues"
+  },
+  "homepage": "https://github.com/SamDesai333/NewPortfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "npm": "^6.8.0"
+  }
+}
