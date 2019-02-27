@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 *{
     box-sizing: border-box;
@@ -15,6 +16,12 @@ body {
     line-height: 1.5
 }
 
+#particles-js{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
 //headings
 
 h1, h2, h3 {
@@ -23,6 +30,7 @@ h1, h2, h3 {
 
     &.lg-heading {
         font-size: 6rem; 
+        align-items: center;
     }
 
     &.sm-heading {
@@ -35,7 +43,6 @@ h1, h2, h3 {
 a {
     color: #fff;
     text-decoration: none;
-
 }
 
 header {
@@ -51,20 +58,6 @@ header {
 main {
     padding: 4rem;
     height: 100%;
-
-    .icons {
-        margin-top: 1rem;
-        
-        a{
-            padding: 0.4rem;
-
-            &:hover{
-                color: $secondary-color;
-                @include easeOut();
-            }
-        }
-    }
-
     &#home{
         overflow: hidden;
 
