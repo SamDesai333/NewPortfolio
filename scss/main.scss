@@ -120,8 +120,41 @@ h1, h2, h3 {
     }
     .job{
         background: lighten($primary-color, 5);
+        opacity: 0.8;
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+    }
+}
+
+//Work Page
+
+.projects{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    img {
+        width: 100%;
+
+        &:hover{
+            opacity: 0.5;
+            @include easeOut;
+        }
+    }
+}
+
+.btn-dark{
+    float: right;
+
+    &:hover{
+        color: $secondary-color;
+    }
+}
+
+.btn-light{
+    &:hover{
+        color: $secondary-color;
     }
 }
 

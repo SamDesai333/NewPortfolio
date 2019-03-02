@@ -199,8 +199,27 @@ h1, h2, h3 {
     grid-area: job3; }
   .about-info .job {
     background: #515151;
+    opacity: 0.8;
     padding: 0.5rem;
     border-bottom: #1f8eca 5px solid; }
+
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%; }
+    .projects img:hover {
+      opacity: 0.5;
+      transition: all 0.5s ease-out; }
+
+.btn-dark {
+  float: right; }
+  .btn-dark:hover {
+    color: #1f8eca; }
+
+.btn-light:hover {
+  color: #1f8eca; }
 
 #main-footer {
   text-align: center;
