@@ -98,10 +98,10 @@
             
             a{
                 padding: 0.4rem;
-                color: set-text-color($primary-color)
+                color: set-text-color($primary-color);
     
                 &:hover{
-                    color: $secondary-color;
+                    color: rgb(121, 201, 1);
                     @include easeOut();
                 }
             }
@@ -136,7 +136,7 @@
         @include easeOut; 
 
         &:hover{
-            color: $secondary-color;  
+            color: rgb(121, 201, 1);  
         }
     }
 }

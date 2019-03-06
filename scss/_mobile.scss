@@ -22,6 +22,7 @@
          .lg-heading{
              line-height: 1;
              margin-bottom: 1rem;
+             width: 100%
          }
      }
 
@@ -58,16 +59,65 @@
          'bioimage'
          'bio'
          'job1'
-         'job2'
-         'job3';
+         'edu2'
+         'edu3';
          grid-template-columns: 1fr;
      }
+
+     .projects{
+        grid-template-columns: 1fr;
+     }
+
+     .btn-light{
+         float: left;
+         margin-bottom: 10px;
+     }
+     .btn-dark{
+         float: right;
+         margin-bottom: 10px;
+     }
+
+     .work-p{
+         text-align: left;
+         
+     }
+
+     .item{
+         width: 100%;
+     }
+
+     .contact-me{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    #contact-form{
+        #name{
+            width:100%;
+            height: 40px;
+        }
+        #email{
+            width:100%;
+            height: 40px;
+        }
+        #message{
+            width: 100%;
+            height: 150px;
+        }
+
+    }
+
+    .lg-heading{
+        width: 100%;
+    }
 }
 
 //Phones
 @include mediaSm {
      main#home h1{
-         margin-top: 10vh;
+         text-align: center;
+         align-items: center;
+         width: 100px;
 
      }
      .menu-branding{       
@@ -89,6 +139,9 @@
             }
         }
     }
+    }
+    .lg-heading{
+        width: 100%;
     }
 }
 

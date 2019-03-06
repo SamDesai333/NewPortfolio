@@ -11,7 +11,6 @@
     </head>
     <body id="bg-img">
         <header>
-            <div id="particles-js"></div>
             <div class="menu-btn">
                 <div class="btn-line"></div>
                 <div class="btn-line"></div>
@@ -36,7 +35,7 @@
                     </div>
                 </div>
                 <ul class="menu-nav">
-                    <li class="nav-item current">
+                    <li class="nav-item">
                         <a href="index.html" class="nav-link">
                             Home
                         </a>
@@ -51,7 +50,7 @@
                             My Work
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item current">
                         <a href="contact.html" class="nav-link">
                             Contact Me
                         </a>
@@ -59,14 +58,33 @@
                 </ul>
             </nav>
         </header>
-        <main id="home">
+        <main id="about">
             <h1 class="lg-heading">
-                Samidh <span class="text-secondary">Desai</span>
+                Contact <span class="text-secondary">Me</span>
             </h1>
-            <h2 class="sm-heading">
-                Artist | <span class="text-color">Developer</span> | Geek
-            </h2>
+            <div class="location-icons">
+                <a href="#!" class="contact-icons">
+                    <i class="fas fa-map-marker-alt fa-2x"></i> <p class="location-p">Chicago, Illinois</p>
+                </a>
+                <a href="#!">
+                    <i class="fas fa-envelope-square fa-2x"></i> <p class="location-p">sdesai.webdev@gmail.com</p>
+                </a> 
+            </div>
+            <div class="contact-me">
+                <div class="contact-form">
+                    <form id="contact-form" name="contact-form" action="handler.php" method="POST">
+                        <input type="text"id="name" name="name" class="form-control" placeholder="enter name" required>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="enter email" required><br>
+                        <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea" placeholder="please type your message" required></textarea><br>
+                        <button type="submit" name ="submit" id="form-submit" class="btn btn-success btn-lg left ">Submit</button>
+                    </form>
+                </div>
+            </div>
         </main>
+        
+        <footer id="main-footer">
+            Copyright &copy; 2019
+        </footer>
         
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>

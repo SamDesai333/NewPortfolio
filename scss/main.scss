@@ -11,7 +11,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Muli', sans-serif;
     line-height: 1.5
 }
 
@@ -36,7 +36,7 @@ h1, h2, h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2),0.5);
+        // background: rgba(lighten($primary-color, 2),0.5);
         align-items: center;
         text-align: center;
     }
@@ -55,6 +55,10 @@ header {
 
 .text-secondary {
     color: $secondary-color;
+}
+
+.text-color {
+    color: rgb(121, 201, 1);
 }
 
 main {
@@ -94,7 +98,7 @@ h1, h2, h3 {
     grid-gap: 30px;
     grid-template-areas:
     'bioimage bio bio'
-    'job1 job2 job3';
+    'job1 edu2 edu3';
     grid-template-columns: repeat(3, 1fr);
     
     .bio-img{
@@ -112,25 +116,37 @@ h1, h2, h3 {
     .job-1{
         grid-area: job1;
     }
-    .job-2{
-        grid-area: job2;
+    .edu-2{
+        grid-area: edu2;
     }
-    .job-3{
-        grid-area: job3;
+    .edu-3{
+        grid-area: edu3;
     }
     .job{
+        text-align: center;
         background: lighten($primary-color, 5);
-        opacity: 0.8;
+        // opacity: 0.8;
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+    }
+    .work-experience{
+        text-align: left;
+    }
+    .education{
+        height: 300px;
+        width: 300px;
+    }
+    hr{
+        width:80px;
     }
 }
 
 //Work Page
 
 .projects{
+    // background-color: $primary-color;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 5px;
     grid-template-columns: repeat(3, 1fr);
 
 
@@ -142,21 +158,124 @@ h1, h2, h3 {
             @include easeOut;
         }
     }
+
+    .item{
+        background-color: $primary-color;
+        padding: 10px;
+    }
 }
 
 .btn-dark{
-    float: right;
+    // float: right;
 
     &:hover{
-        color: $secondary-color;
+        color: rgb(121, 201, 1);
     }
 }
 
 .btn-light{
+    margin-right: 10px;
     &:hover{
-        color: $secondary-color;
+        color: rgb(121, 201, 1);
     }
 }
+
+//contact page
+
+.contact-me{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact-form{
+    display: inline;
+
+    input::placeholder { 
+        color: $secondary-color; 
+        font-size: 15px; 
+       
+    }
+    textarea::placeholder{
+        color: $secondary-color; 
+        font-size: 15px; 
+       
+    }
+
+    #name{
+        width:300px;
+        height: 40px;
+        padding: 20px;
+        margin-bottom: 30px;
+        background: none;
+        color: #fff;
+        border: 2px $secondary-color solid;
+        border-radius: 10px;
+        font-size: 15px;
+
+        &:hover{
+            border-color: rgb(121, 201, 1);
+            @include easeOut;
+        }
+
+    }
+    #email{
+        width:300px;
+        height: 40px;
+        padding: 20px;
+        margin-bottom: 30px;
+        background: none;
+        color: #fff;
+        border: 2px $secondary-color solid;
+        border-radius: 10px;
+        font-size: 15px;
+
+        &:hover{
+            border-color: rgb(121, 201, 1);
+            @include easeOut;
+        }
+
+    }
+    #message{
+        width:600px;
+        height: 150px;
+        padding: 20px;
+        margin-bottom: 30px;
+        background: none;
+        color: #fff;
+        border: 2px $secondary-color solid;
+        border-radius: 10px;
+        font-size: 15px;
+
+        &:hover{
+            border-color: rgb(121, 201, 1);
+            @include easeOut;
+        }
+
+    }
+    #form-submit{
+        width:100px;
+        height: 40px;
+        background: none;
+        color: $secondary-color;
+        border: 2px $secondary-color solid;
+        border-radius: 10px;
+        font-size: 15px;
+
+        &:hover{
+            border-color: rgb(121, 201, 1);
+            @include easeOut;
+        }
+
+    }
+}
+
+.location-icons{
+text-align: center;
+}
+.contact-icons{
+}
+
+
 
 #main-footer{
     text-align: center;
