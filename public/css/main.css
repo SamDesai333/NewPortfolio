@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #2b363f;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #35434e;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -63,9 +63,9 @@
       margin-top: 1rem; }
       .menu-branding .icons a {
         padding: 0.4rem;
-        color: #fff .menu-branding .icons a; }
-        .menu-branding .icons a :hover {
-          color: #1f8eca;
+        color: #fff; }
+        .menu-branding .icons a:hover {
+          color: #79c901;
           transition: all 0.5s ease-out; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -85,7 +85,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #1f8eca; }
+      color: #79c901; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -103,14 +103,14 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #35434e;
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Muli', sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(/../img/background.jpg);
+    background: url(/../img/Wallpaper.png);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -121,7 +121,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.7);
+      background: rgba(53, 67, 78, 0.7);
       background-size: cover; }
 
 #particles-js {
@@ -139,7 +139,6 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5);
     align-items: center;
     text-align: center; }
 
@@ -154,6 +153,9 @@ header {
 
 .text-secondary {
   color: #1f8eca; }
+
+.text-color {
+  color: #79c901; }
 
 main {
   padding: 4rem;
@@ -179,7 +181,7 @@ h1, h2, h3 {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 edu2 edu3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     margin: auto;
@@ -193,38 +195,114 @@ h1, h2, h3 {
     font-size: 1.3rem; }
   .about-info .job-1 {
     grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
+  .about-info .edu-2 {
+    grid-area: edu2; }
+  .about-info .edu-3 {
+    grid-area: edu3; }
   .about-info .job {
-    background: #515151;
-    opacity: 0.8;
+    text-align: center;
+    background: #3f505d;
     padding: 0.5rem;
     border-bottom: #1f8eca 5px solid; }
+  .about-info .work-experience {
+    text-align: left; }
+  .about-info .education {
+    height: 300px;
+    width: 300px; }
+  .about-info hr {
+    width: 80px; }
 
 .projects {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 5px;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%; }
     .projects img:hover {
       opacity: 0.5;
       transition: all 0.5s ease-out; }
+  .projects .item {
+    background-color: #35434e;
+    padding: 10px; }
 
-.btn-dark {
-  float: right; }
-  .btn-dark:hover {
-    color: #1f8eca; }
+.btn-dark:hover {
+  color: #79c901; }
 
-.btn-light:hover {
-  color: #1f8eca; }
+.btn-light {
+  margin-right: 10px; }
+  .btn-light:hover {
+    color: #79c901; }
+
+.contact-me {
+  margin-top: 50px;
+  text-align: center; }
+
+#contact-form {
+  display: inline; }
+  #contact-form input::placeholder {
+    color: #1f8eca;
+    font-size: 15px; }
+  #contact-form textarea::placeholder {
+    color: #1f8eca;
+    font-size: 15px; }
+  #contact-form #name {
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: none;
+    color: #fff;
+    border: 2px #1f8eca solid;
+    border-radius: 10px;
+    font-size: 15px; }
+    #contact-form #name:hover {
+      border-color: #79c901;
+      transition: all 0.5s ease-out; }
+  #contact-form #email {
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: none;
+    color: #fff;
+    border: 2px #1f8eca solid;
+    border-radius: 10px;
+    font-size: 15px; }
+    #contact-form #email:hover {
+      border-color: #79c901;
+      transition: all 0.5s ease-out; }
+  #contact-form #message {
+    width: 600px;
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: none;
+    color: #fff;
+    border: 2px #1f8eca solid;
+    border-radius: 10px;
+    font-size: 15px; }
+    #contact-form #message:hover {
+      border-color: #79c901;
+      transition: all 0.5s ease-out; }
+  #contact-form #form-submit {
+    width: 100px;
+    height: 40px;
+    background: none;
+    color: #1f8eca;
+    border: 2px #1f8eca solid;
+    border-radius: 10px;
+    font-size: 15px; }
+    #contact-form #form-submit:hover {
+      border-color: #79c901;
+      transition: all 0.5s ease-out; }
+
+.location-icons {
+  text-align: center; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #202930;
   color: #fff;
   height: 60px; }
 
@@ -236,7 +314,8 @@ h1, h2, h3 {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      width: 100%; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -256,12 +335,40 @@ h1, h2, h3 {
       height: 150px;
       background-size: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'edu2' 'edu3';
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: 1fr; }
+  .btn-light {
+    float: left;
+    margin-bottom: 10px; }
+  .btn-dark {
+    float: right;
+    margin-bottom: 10px; }
+  .work-p {
+    text-align: left; }
+  .item {
+    width: 100%; }
+  .contact-me {
+    margin-top: 50px;
+    text-align: center; }
+  #contact-form #name {
+    width: 100%;
+    height: 40px; }
+  #contact-form #email {
+    width: 100%;
+    height: 40px; }
+  #contact-form #message {
+    width: 100%;
+    height: 150px; }
+  .lg-heading {
+    width: 100%; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; }
+    text-align: center;
+    align-items: center;
+    width: 100px; }
   .menu-branding .portrait {
     width: 100px;
     height: 100px;
@@ -273,4 +380,6 @@ h1, h2, h3 {
       padding: 0.4rem; }
       .menu-branding .icons a:hover {
         color: #1f8eca;
-        transition: all 0.5s ease-out; } }
+        transition: all 0.5s ease-out; }
+  .lg-heading {
+    width: 100%; } }
