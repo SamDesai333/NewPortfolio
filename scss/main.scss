@@ -269,13 +269,23 @@ h1, h2, h3 {
     }
 }
 
+.icons-contact{
+    text-align: center;
+
+    a{
+        padding: 0.4rem;
+        color: set-text-color($primary-color);
+
+        &:hover{
+            color: rgb(121, 201, 1);
+            @include easeOut();
+        }
+    }
+}
+
 .location-icons{
 text-align: center;
 }
-.contact-icons{
-}
-
-
 
 #main-footer{
     text-align: center;
