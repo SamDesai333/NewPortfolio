@@ -296,6 +296,15 @@ h1, h2, h3 {
       border-color: #79c901;
       transition: all 0.5s ease-out; }
 
+.icons-contact {
+  text-align: center; }
+  .icons-contact a {
+    padding: 0.4rem;
+    color: #fff; }
+    .icons-contact a:hover {
+      color: #79c901;
+      transition: all 0.5s ease-out; }
+
 .location-icons {
   text-align: center; }
 
@@ -309,13 +318,19 @@ h1, h2, h3 {
 @media screen and (max-width: 768px) {
   header #particles-js {
     display: none; }
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
-      width: 100%; }
+  main h1, main h2, main h3 {
+    margin: 0;
+    font-weight: 200; }
+    main h1.lg-heading, main h2.lg-heading, main h3.lg-heading {
+      font-size: 4rem;
+      align-items: center;
+      text-align: center; }
+    main h1.sm-heading, main h2.sm-heading, main h3.sm-heading {
+      margin-bottom: 2rem;
+      padding: 0.2rem 1rem;
+      align-items: center;
+      text-align: center;
+      font-size: 1.2rem; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -334,9 +349,43 @@ h1, h2, h3 {
       width: 150px;
       height: 150px;
       background-size: 150px; }
+  main {
+    margin: 0; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'edu2' 'edu3';
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 'bioimage'  'bio' 'job1'  'edu2'  'edu3';
     grid-template-columns: 1fr; }
+    .about-info .bio-img {
+      margin: auto;
+      text-align: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: solid 3px #1f8eca;
+      grid-area: bioimage; }
+    .about-info .bio {
+      grid-area: bio;
+      font-size: 1.3rem;
+      align-items: center; }
+    .about-info .job-1 {
+      grid-area: job1; }
+    .about-info .edu-2 {
+      grid-area: edu2; }
+    .about-info .edu-3 {
+      grid-area: edu3; }
+    .about-info .job {
+      text-align: center;
+      background: #3f505d;
+      padding: 0.5rem;
+      border-bottom: #1f8eca 5px solid; }
+    .about-info .work-experience {
+      text-align: left; }
+    .about-info .education {
+      height: 250px;
+      width: 250px; }
+    .about-info hr {
+      width: 80px; }
   .projects {
     grid-template-columns: 1fr; }
   .btn-light {
@@ -360,15 +409,9 @@ h1, h2, h3 {
     height: 40px; }
   #contact-form #message {
     width: 100%;
-    height: 150px; }
-  .lg-heading {
-    width: 100%; } }
+    height: 150px; } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    text-align: center;
-    align-items: center;
-    width: 100px; }
   .menu-branding .portrait {
     width: 100px;
     height: 100px;
@@ -381,5 +424,6 @@ h1, h2, h3 {
       .menu-branding .icons a:hover {
         color: #1f8eca;
         transition: all 0.5s ease-out; }
-  .lg-heading {
-    width: 100%; } }
+  .about-info .bio-image {
+    width: 100px;
+    height: 100px; } }
